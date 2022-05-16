@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    background-color: aquamarine;
+}
+nav {
+    height: 60px;
+    width: calc(100vw - 22px);
+    border: 1px solid salmon;
+    position: absolute;
+    z-index: 10;
+    display: flex;
+    padding: 10px;
+}
+
+.listInlineStyle li {
+    display: inline;
+    padding: 10px;
+}
+
+#navLeftSide {
+    
+}
+
+#navRightSide {
+    margin-left: auto;
+    right: 0;
+    padding-right: 10px;
+}
+
+header {
+    position: absolute;
+    width: 100vw;
+    height: 90vh;
+    overflow: hidden;
+}
+
+#bgVid {
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+}
