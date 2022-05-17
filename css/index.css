@@ -1,15 +1,21 @@
+html {
+    font-family: 'Inter', sans-serif;
+}
+
 body {
     margin: 0;
-    background-color: aquamarine;
+    background-color: rgb(116, 153, 141);
 }
 nav {
-    height: 60px;
-    width: calc(100vw - 22px);
+    width: calc(100% - 62px);
     border: 1px solid salmon;
     position: absolute;
     z-index: 10;
     display: flex;
-    padding: 10px;
+    padding: 10px 30px;
+}
+nav * {
+    border: 1px solid orangered;
 }
 
 .listInlineStyle li {
@@ -24,12 +30,14 @@ nav {
 #navRightSide {
     margin-left: auto;
     right: 0;
-    padding-right: 10px;
+    font-family: 'inter', sans-serif;
+    font-weight: 600;
+    color: white;
 }
 
 header {
     position: absolute;
-    width: 100vw;
+    width: 100%;
     height: 90vh;
     overflow: hidden;
 }
@@ -37,7 +45,106 @@ header {
 #bgVid {
     right: 0;
     bottom: 0;
-    width: 100vw;
+    width: 100%;
     position: absolute;
     bottom: 0;
+}
+
+#introParaQup {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    background-color: white;
+    border: 1px solid yellowgreen;
+}
+
+#introParaQup h2 {
+    color: #5c281d;
+    font-size: 3em;
+    padding: 100px;
+    width: 800px;
+    margin: 0;
+    line-height: 1;
+}
+
+main {
+    z-index: 200;
+    position: absolute;
+    top: 90vh;
+    display: flex;
+    width: 100%;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    border: 1px solid salmon;
+    flex-direction: column;
+}
+
+main * {
+    
+}
+
+#businessQupSetup {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.halfHalf {
+    width: 600px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#setupRight {
+    text-align: left;
+    padding: 40px;
+    background-color: white;
+}
+
+#setupLeft {
+    background-color: orangered;
+    padding: 40px;
+}
+
+#benefitSection {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#benefitContent {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: beige;
+    justify-items: center;
+    text-align: center;
+}
+
+#benefitsGrid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 1px solid yellow;
+    justify-content: center;
+}
+
+.blockItem {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid salmon;
+}
+
+.blockItemIcon {
+    height: 200px;
+    width: 300px;
+    background-color: blueviolet;
+
 }
