@@ -4,7 +4,7 @@ html {
 
 body {
     margin: 0;
-    background-color: rgb(116, 153, 141);
+    background-color: white);
 }
 nav {
     width: calc(100% - 62px);
@@ -111,7 +111,7 @@ main * {
 #setupRight {
     text-align: left;
     padding: 40px;
-    background-color: wheat;
+    background-color: #F8B400;
     display: flex;
     align-content: center;
 }
@@ -130,7 +130,7 @@ main * {
 }
 
 #setupLeft {
-    background-color: orangered;
+    background-color: #F8B400;
     padding: 40px;
 }
 
@@ -151,7 +151,7 @@ main * {
     display: flex;
     flex-direction: column;
     width: 100%;
-    background-color: beige;
+    background-color: white;
     justify-items: center;
     text-align: center;
     padding: 40px 0;
@@ -176,7 +176,7 @@ main * {
 .blockItemIcon {
     height: 200px;
     width: 250px;
-    background-color: blueviolet;
+    background-color: #F8B400;
 }
 
 #qupDemo {
@@ -188,7 +188,7 @@ main * {
 #qupDemoImage {
     width: 100%;
     height: 450px;
-    background-image: url(images/qupMockup.jpg);
+    background-image: url(../images/qupMockup.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -215,5 +215,5 @@ footer {
     flex-direction: column;
     width: 100%;
     position: relative;
-    background-color: blueviolet;
+    background-color: #f25723;
 }
