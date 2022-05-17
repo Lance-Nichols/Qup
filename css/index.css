@@ -32,6 +32,7 @@ nav {
     display: flex;
     justify-content: center;
     position: relative;
+    align-items: center;
 }
 
 #qupIntroLottie {
@@ -39,6 +40,7 @@ nav {
     width: 50vw;
     z-index: 50;
     height: auto;
+    align-self: center;
     top: 15vh;
 }
 
