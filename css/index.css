@@ -56,7 +56,6 @@ header {
     justify-content: center;
     width: 100%;
     background-color: white;
-    border: 1px solid yellowgreen;
 }
 
 #introParaQup h2 {
@@ -77,7 +76,6 @@ main {
     text-align: center;
     align-content: center;
     align-items: center;
-    border: 1px solid salmon;
     flex-direction: column;
 }
 
@@ -88,21 +86,38 @@ main * {
 #businessQupSetup {
     display: flex;
     width: 100%;
-    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
 .halfHalf {
-    width: 600px;
-    height: 300px;
+    width: calc(50% - 80px);
+    min-width: 300px;
+    min-height: 300px;
     display: flex;
-    align-items: center;
     flex-direction: column;
 }
 
 #setupRight {
     text-align: left;
     padding: 40px;
-    background-color: white;
+    background-color: wheat;
+    display: flex;
+    align-content: center;
+}
+
+.halfHalfCopyBox {
+    max-width: 500px;
+    margin-left: 0;
+    margin-right: auto;
+    border: 1px solid salmon;
+    position: relative;
+    margin: auto 0;
+}
+
+.halfHalfCopyBox h3 {
+    font-size: 2em;
+    margin: 0;
 }
 
 #setupLeft {
@@ -116,6 +131,13 @@ main * {
     justify-content: center;
 }
 
+#benefitContent h2 {
+    color: #5c281d;
+    font-size: 3em;
+    line-height: 1;
+    margin: 0 0 30px 0;
+}
+
 #benefitContent {
     display: flex;
     flex-direction: column;
@@ -123,28 +145,52 @@ main * {
     background-color: beige;
     justify-items: center;
     text-align: center;
+    padding: 40px 0;
 }
 
 #benefitsGrid {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    border: 1px solid yellow;
+    border: 1px solid brown;
     justify-content: center;
+
 }
 
 .blockItem {
     display: flex;
     flex-direction: column;
-    width: 300px;
-    justify-content: center;
+    width: 250px;
     text-align: center;
     border: 1px solid salmon;
+    margin: 10px;
 }
 
 .blockItemIcon {
     height: 200px;
-    width: 300px;
+    width: 250px;
     background-color: blueviolet;
+
+}
+
+#qupDemo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+#qupDemoImage {
+    width: 100%;
+    height: 400px;
+    background-color: palevioletred;
+}
+
+#qupDemoUSP {
+    display: inline-flex;
+    justify-content: center;
+}
+
+.blockItemIcon {
+    position: relative;
 
 }
