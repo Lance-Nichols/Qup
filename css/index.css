@@ -1,17 +1,185 @@
+/* Extra small devices (phones, 600px and down) */
+@media screen and (max-width: 600px) {
+    
+    #lottieContainer {
+        top: 180px;
+    }
+    
+    #qupIntroLottie {
+        width: 70vw;
+    }
+    
+    .halfHalf {
+        width: calc(100vw - 80px);
+        display: flex;
+        flex-direction: column;
+    }
+
+    .halfHalfCopyBox {
+        width: auto;
+    }
+    
+    #videoContainer {
+        width: 100vw;
+        overflow: hidden;
+    }
+
+    #bgVid {
+        height: 40vh;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    h3 {
+        font-size: 1.2em; 
+    }
+
+    #introParaQup h2 {
+        color: #5c281d;
+        margin: 0;
+        padding: 40px 20px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media screen and (min-width: 600px) {
+    
+    #lottieContainer {
+        top: 250px;
+    }
+    
+    #qupIntroLottie {
+        width: 70vw;
+    }
+
+    #videoContainer {
+        width: 100vw;
+        overflow: hidden;
+    }
+
+    .halfHalf {
+        width: calc(50% - 80px);
+        min-width: 300px;
+        min-height: 300px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .halfHalfCopyBox {
+        width: auto;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    h3 {
+        font-size: 1.3em; 
+    }
+
+    #introParaQup h2 {
+        color: #5c281d;
+        margin: 0;
+        padding: 40px 20px;
+        max-width: 700px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+    
+    #lottieContainer {
+        top: 300px;
+    }
+    
+    #qupIntroLottie {
+        width: 70vw;
+    }
+    
+    #videoContainer {
+        width: 100vw;
+        overflow: hidden;
+    }
+    
+    .halfHalf {
+        width: calc(50% - 80px);
+        min-width: 300px;
+        min-height: 300px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .halfHalfCopyBox {
+        width: auto;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+    #videoContainer {
+        width: 100vw;
+        overflow: hidden;
+    }
+    
+    .halfHalf {
+        width: calc(50% - 80px);
+        min-width: 300px;
+        min-height: 300px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .halfHalfCopyBox {
+        width: auto;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media screen and (min-width: 1200px) {
+    
+    #lottieContainer {
+        top: 300px;
+    }
+    
+    #qupIntroLottie {
+        width: 40vw;
+    }
+    
+    #videoContainer {
+        width: 100vw;
+        overflow: hidden;
+    }
+    
+    .halfHalf {
+        width: calc(50% - 80px);
+        min-width: 300px;
+        min-height: 300px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .halfHalfCopyBox {
+        width: auto;
+        max-width: 500px;
+    }
+}
+
 html {
     font-family: 'Inter', sans-serif;
 }
 
 body {
     margin: 0;
-    background-color: white);
+    background-color: white;
 }
 nav {
-    width: calc(100% - 62px);
+    width: 100%;
     position: absolute;
     z-index: 10;
     display: flex;
-    padding: 10px 30px;
+    padding: 10px 0;
     justify-content: center;
 }
 
@@ -32,23 +200,19 @@ nav {
     display: flex;
     justify-content: center;
     position: relative;
-    align-items: center;
 }
 
 #qupIntroLottie {
     position: absolute;
-    width: 50vw;
     z-index: 50;
     height: auto;
     align-self: center;
-    top: 15vh;
 }
 
 #video-container {
-    min-height: 70vh;
-    min-width: 100vw;
+    width: 100vw;
     position: flex;
-    overflow: hidden;
+    overflow: hidden !important;
 }
 
 #bgVid {
@@ -57,7 +221,7 @@ nav {
     min-width: 100%;
     object-fit: cover;
     display: flex;
-    transform: translate( -50%);
+    transform: translate(-50%);
     position: relative;
     left: 50%;
     bottom: 0;
@@ -73,11 +237,7 @@ nav {
 
 #introParaQup h2 {
     color: #5c281d;
-    font-size: 3em;
-    padding: 100px;
-    width: 800px;
     margin: 0;
-    line-height: 1;
 }
 
 main {
@@ -89,23 +249,17 @@ main {
     align-content: center;
     align-items: center;
     flex-direction: column;
-}
-
-main * {
-    
+    overflow: hidden;
 }
 
 #businessQupSetup {
     display: flex;
-    width: 100%;
+    width: 100vw;
     flex-wrap: wrap;
     flex-direction: row;
 }
 
 .halfHalf {
-    width: calc(50% - 80px);
-    min-width: 300px;
-    min-height: 300px;
     display: flex;
     flex-direction: column;
 }
@@ -113,27 +267,46 @@ main * {
 #setupRight {
     text-align: left;
     padding: 40px;
+    background-image: url(../images/mustard-arrows2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     background-color: #F8B400;
     display: flex;
     align-content: center;
 }
 
 .halfHalfCopyBox {
-    max-width: 500px;
     margin-left: 0;
     margin-right: auto;
     position: relative;
     margin: auto 0;
 }
 
+h1, h2, h3, h4 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    line-height: 1.1;
+}
+
 .halfHalfCopyBox h3 {
-    font-size: 2em;
+    color: #5c281d;
     margin: 0;
 }
+
+.halfHalfCopyBox p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 1em;
+    line-height: 1.1;
+    color: #5c281d;
+    margin: 20px 0;
+}
+
 
 #setupLeft {
     background-color: #F8B400;
     padding: 40px;
+    width: calc(50vw - 80px);
 }
 
 #benefitSection {
@@ -144,8 +317,6 @@ main * {
 
 #benefitContent h2 {
     color: #5c281d;
-    font-size: 3em;
-    line-height: 1;
     margin: 0 0 30px 0;
 }
 
@@ -211,11 +382,32 @@ main * {
     height: 300px;
     width: 100%;
     display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 0;
 }
+
+#createAccount h2 {
+    color: white;
+    margin: 0 0 30px 0;
+}
+
 footer {
     display: flex;
     flex-direction: column;
     width: 100%;
     position: relative;
-    background-color: #f25723;
+    background-image: url(../images/tomato-arrows1.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-color: #EF643B;
+    background-position: center;
+}
+
+#smallPrintContainer {
+    height: 20px;
+    width: 100%;
+    padding: 5px 0;
+    background-color: white;
+    text-align: center;
 }
