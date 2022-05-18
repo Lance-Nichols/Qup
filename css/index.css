@@ -172,6 +172,39 @@ nav {
     padding: 10px;
 }
 
+.navItem:hover {
+    cursor: pointer;
+}
+
+.navItem a {
+    text-decoration: none;
+    color: white;
+}
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: #F8B400;
+  }
+  
+  .hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: -2px;
+    left: 0;
+    background-color: #F8B400;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
 #videoContainer {
     width: 100%;
     overflow: hidden;
@@ -378,10 +411,10 @@ footer {
     flex-direction: column;
     width: 100%;
     position: relative;
-    background-image: url(../images/tomato-arrows1.jpg);
+    background-image: url(../images/mustard-arrows3.jpg);
     background-repeat: no-repeat;
     background-size:cover;
-    background-color: #EF643B;
+    background-color: #F8B400;
     background-position: center;
 }
 
