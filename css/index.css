@@ -493,8 +493,13 @@ h1, h2, h3, h4 {
 
 .blockItemIcon {
     position: relative;
-
 }
+
+.blockItem h3 {
+    color: #424242;
+    font-weight: 700;
+}
+
 #accountSection {
     width: 100%;
     display: flex;
