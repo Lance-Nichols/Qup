@@ -32,7 +32,7 @@
     }
 
     #introParaQup h2 {
-        color: #5c281d;
+        color: #424242;
         margin: 0;
         padding: 40px 20px;
     }
@@ -70,7 +70,7 @@
     }
 
     #introParaQup h2 {
-        color: #5c281d;
+        color: #424242;
         margin: 0;
         padding: 50px 20px;
         max-width: 700px;
@@ -250,7 +250,7 @@ nav {
 }
 
 #introParaQup h2 {
-    color: #5c281d;
+    color: #424242;
     margin: 0;
 }
 
@@ -303,7 +303,7 @@ h1, h2, h3, h4 {
 }
 
 .halfHalfCopyBox h3 {
-    color: #5c281d;
+    color: #424242;
     margin: 0;
 }
 
@@ -312,7 +312,7 @@ h1, h2, h3, h4 {
     font-weight: 500;
     font-size: 1em;
     line-height: 1.1;
-    color: #5c281d;
+    color: #424242;
     margin: 20px 0;
 }
 
@@ -330,7 +330,7 @@ h1, h2, h3, h4 {
 }
 
 #benefitContent h2 {
-    color: #5c281d;
+    color: #424242;
     margin: 0 0 30px 0;
 }
 
@@ -363,7 +363,38 @@ h1, h2, h3, h4 {
 .blockItemIcon {
     height: 200px;
     width: 250px;
-    background-color: #F8B400;
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#iconPaperless {
+    background-image: url(../images/qup-icon-1.png);
+}
+
+#iconTraffic {
+    background-image: url(../images/qup-icon-2.png);
+}
+
+#iconCovid {
+    background-image: url(../images/qup-icon-5.png);
+}
+
+#iconQueue {
+    background-image: url(../images/qup-icon-6.png);
+}
+
+#iconDesign {
+    background-image: url(../images/qup-icon.png);
+}
+
+#iconEffortless {
+    background-image: url(../images/qup-icon-3.png);
+}
+
+#iconIntegrate {
+    background-image: url(../images/qup-icon-4.png);
 }
 
 #qupDemo {
@@ -401,8 +432,8 @@ h1, h2, h3, h4 {
     padding: 40px 0;
 }
 
-#createAccount h2 {
-    color: white;
+#createAccount h2,#createAccount h3 {
+    color: #424242;
     margin: 0 0 30px 0;
 }
 
