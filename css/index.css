@@ -36,6 +36,31 @@
         margin: 0;
         padding: 40px 20px;
     }
+
+    #setupLeft {
+        background-color: #F8B400;
+        width: 100%;
+        height: 220px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #qupScanLottie {
+        height: 280px;
+        width: 280px;
+        position: relative;
+        bottom: 10px;
+    }
+
+    .blockItem {
+        width: 130px;
+    }
+    
+    .blockItemIcon {
+        height: 130px;
+        width: 130px;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -50,15 +75,23 @@
     }
 
     .halfHalf {
-        width: calc(50% - 80px);
+        width: calc(100% - 80px);
         min-width: 300px;
         min-height: 300px;
         display: flex;
         flex-direction: column;
+        padding: 0 40px;
     }
 
     .halfHalfCopyBox {
         width: auto;
+    }
+
+    #setupLeft {
+        background-color: #F8B400;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     h2 {
@@ -74,6 +107,15 @@
         margin: 0;
         padding: 50px 20px;
         max-width: 700px;
+    }
+
+    .blockItem {
+        width: 170px;
+    }
+    
+    .blockItemIcon {
+        height: 170px;
+        width: 170px;
     }
 }
 
@@ -99,6 +141,22 @@
     .halfHalfCopyBox {
         width: auto;
     }
+
+    .blockItem {
+        width: 130px;
+    }
+    
+    .blockItemIcon {
+        height: 130px;
+        width: 130px;
+    }
+
+    #setupLeft {
+        background-color: #F8B400;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -114,6 +172,15 @@
 
     .halfHalfCopyBox {
         width: auto;
+    }
+
+    #qupScanLottie {
+        position: relative;
+        bottom: 0;
+        height: 500px;
+        width: 500px;
+        margin-left: auto;
+        margin-right: 0;
     }
 }
 
@@ -134,11 +201,21 @@
         min-height: 300px;
         display: flex;
         flex-direction: column;
+        padding: 40px;
     }
 
     .halfHalfCopyBox {
         width: auto;
         max-width: 500px;
+    }
+
+    #qupScanLottie {
+        position: relative;
+        bottom: 0;
+        height: 600px;
+        width: 600px;
+        margin-left: auto;
+        margin-right: 0;
     }
 }
 
@@ -319,17 +396,6 @@ h1, h2, h3, h4 {
 
 #setupLeft {
     background-color: #F8B400;
-    padding: 40px;
-    width: calc(50vw - 82px);
-}
-
-#qupScanLottie {
-    position: relative;
-    bottom: 30%;
-    height: 600px;
-    width: 600px;
-    margin-left: auto;
-    margin-right: 0;
 }
 
 #benefitSection {
@@ -364,14 +430,11 @@ h1, h2, h3, h4 {
 .blockItem {
     display: flex;
     flex-direction: column;
-    width: 250px;
     text-align: center;
     margin: 10px;
 }
 
 .blockItemIcon {
-    height: 200px;
-    width: 250px;
     background-color: transparent;
     background-position: center;
     background-repeat: no-repeat;
