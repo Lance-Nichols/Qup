@@ -276,6 +276,7 @@ main {
 .halfHalf {
     display: flex;
     flex-direction: column;
+    max-height: 380px;
 }
 
 #setupRight {
@@ -316,11 +317,19 @@ h1, h2, h3, h4 {
     margin: 20px 0;
 }
 
-
 #setupLeft {
     background-color: #F8B400;
     padding: 40px;
-    width: calc(50vw - 80px);
+    width: calc(50vw - 82px);
+}
+
+#qupScanLottie {
+    position: relative;
+    bottom: 30%;
+    height: 600px;
+    width: 600px;
+    margin-left: auto;
+    margin-right: 0;
 }
 
 #benefitSection {
@@ -406,7 +415,7 @@ h1, h2, h3, h4 {
 #qupDemoImage {
     width: 100%;
     height: 450px;
-    background-image: url(../images/qupMockup.jpg);
+    background-image: url(../images/qupMockup2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -433,8 +442,12 @@ h1, h2, h3, h4 {
 }
 
 #createAccount h2,#createAccount h3 {
-    color: #424242;
+    color: white;
     margin: 0 0 30px 0;
+}
+
+#createAccount h3 {
+    font-weight: 500;
 }
 
 footer {
@@ -442,10 +455,10 @@ footer {
     flex-direction: column;
     width: 100%;
     position: relative;
-    background-image: url(../images/mustard-arrows3.jpg);
+    background-image: url(../images/mono-arrows3.png);
     background-repeat: no-repeat;
     background-size:cover;
-    background-color: #F8B400;
+    background-color: #424242;
     background-position: center;
 }
 
@@ -455,4 +468,23 @@ footer {
     padding: 5px 0;
     background-color: white;
     text-align: center;
+}
+
+#qupButtons {
+    display: flex;
+    flex-direction: row;
+}
+
+.qupButton {
+    cursor: pointer;
+    padding: 10px 20px;
+    border: 1px solid #f8b400;
+    color: white;
+    margin: 10px;
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+#createQupButton {
+    background-color: #F8B400;
 }
