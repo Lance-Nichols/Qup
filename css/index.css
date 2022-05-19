@@ -496,7 +496,6 @@ h1, h2, h3, h4 {
 
 }
 #accountSection {
-    height: 300px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -520,9 +519,9 @@ footer {
     position: relative;
     background-image: url(../images/mono-arrows3.png);
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
     background-color: #424242;
-    background-position: center;
+    background-position: right;
 }
 
 #smallPrintContainer {
